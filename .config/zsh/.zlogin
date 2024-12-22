@@ -1,0 +1,1 @@
+/Users/dede/.config/zsh/.zprezto/runcoms/zlogin
