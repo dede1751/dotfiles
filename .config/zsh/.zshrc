@@ -28,3 +28,6 @@ alias lt='eza --tree --level=2 --color=always --group-directories-first --icons'
 
 alias cd="z"
 alias cat="bat"
+
+# Source files
+eval "$(zoxide init zsh)"

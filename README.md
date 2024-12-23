@@ -1,4 +1,5 @@
 # Dotfiles
+This is a repository for my dotfiles for MacOS, managed with [yadm](https://yadm.io/).
 
 ## Homebrew packages
 
@@ -7,9 +8,14 @@ Install Homebrew:
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 ```
 
-Install required packages:
+Install Homebrew packages:
 ```sh
 brew install git git-lfs yadm eza bat zoxide
+```
+
+Install Homebrew casks:
+```sh
+brew install --cask visual-studio-code nikitabobko/tap/aerospace
 ```
 
 ## Prezto
