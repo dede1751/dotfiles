@@ -6,7 +6,7 @@ options=(
 	hidpi=true
 	active_color=0xffe2e2e3
 	inactive_color=0xff414550
-	blacklist="System Preferences,System Settings,Finder,ChatGPT,Bitwarden"
+	blacklist="System Preferences,System Settings,Finder,ChatGPT,Bitwarden,Steam Helper"
 )
 
 borders "${options[@]}"
