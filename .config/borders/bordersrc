@@ -2,10 +2,11 @@
 
 options=(
 	style=round
-	width=6.0
-	hidpi=off
+	width=4.0
+	hidpi=true
 	active_color=0xffe2e2e3
 	inactive_color=0xff414550
+	blacklist="System Preferences,System Settings,Finder,ChatGPT,Bitwarden"
 )
 
 borders "${options[@]}"
