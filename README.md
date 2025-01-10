@@ -1,6 +1,10 @@
 # Dotfiles
 This is a repository for my dotfiles for MacOS, managed with [yadm](https://yadm.io/).
 
+## Fonts
+[Iosevka NF](https://github.com/ryanoasis/nerd-fonts/releases/download/v3.3.0/Iosevka.zip)
+[MesloLGS NF](https://github.com/romkatv/powerlevel10k/blob/master/font.md)
+
 ## Homebrew packages
 
 Install Homebrew:
@@ -15,7 +19,13 @@ brew install git git-lfs yadm eza bat zoxide fzf
 
 Install Homebrew casks:
 ```sh
-brew install --cask visual-studio-code nikitabobko/tap/aerospace
+brew install --cask firefox visual-studio-code nikitabobko/tap/aerospace wezterm whatsapp telegram
+```
+
+Install Homebrew formulae:
+```sh
+brew tap FelixKratz/formulae
+brew install borders
 ```
 
 ## Prezto
