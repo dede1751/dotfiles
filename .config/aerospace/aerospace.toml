@@ -142,6 +142,7 @@ alt-5 = 'workspace 5'
 
 alt-b = 'workspace B' # Browser
 alt-c = 'workspace C' # Code editor
+alt-g = 'workspace G' # Games
 alt-w = 'workspace W' # Whatsapp/Telegram
 
 # See: https://nikitabobko.github.io/AeroSpace/commands#move-node-to-workspace
@@ -153,6 +154,7 @@ alt-shift-5 = 'move-node-to-workspace 5 --focus-follows-window'
 
 alt-shift-b = 'move-node-to-workspace B --focus-follows-window'
 alt-shift-c = 'move-node-to-workspace C --focus-follows-window'
+alt-shift-g = 'move-node-to-workspace G --focus-follows-window'
 alt-shift-w = 'move-node-to-workspace W --focus-follows-window'
 
 # See: https://nikitabobko.github.io/AeroSpace/commands#workspace-back-and-forth
@@ -186,18 +188,22 @@ backspace = ['close-all-windows-but-current', 'mode main']
 
 [[on-window-detected]]
 if.app-id = 'org.mozilla.firefox'
-run = 'move-node-to-workspace B'
+run = 'move-node-to-workspace B --focus-follows-window'
 
 [[on-window-detected]]
 if.app-id = 'com.microsoft.VSCode'
-run = 'move-node-to-workspace C'
+run = 'move-node-to-workspace C --focus-follows-window'
 
 [[on-window-detected]]
 if.app-id = 'net.whatsapp.WhatsApp'
-run = 'move-node-to-workspace W'
+run = 'move-node-to-workspace W --focus-follows-window'
 [[on-window-detected]]
 if.app-id = 'ru.keepcoder.Telegram'
-run = 'move-node-to-workspace W'
+run = 'move-node-to-workspace W --focus-follows-window'
+
+[[on-window-detected]]
+if.app-name-regex-substring = 'steam'
+run = 'move-node-to-workspace G --focus-follows-window'
 
 # Floating Windows, need to specify a callback for each individual one.
 # https://github.com/nikitabobko/AeroSpace/issues/660

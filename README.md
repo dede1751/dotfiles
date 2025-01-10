@@ -10,7 +10,7 @@ Install Homebrew:
 
 Install Homebrew packages:
 ```sh
-brew install git git-lfs yadm eza bat zoxide
+brew install git git-lfs yadm eza bat zoxide fzf
 ```
 
 Install Homebrew casks:
