@@ -170,10 +170,10 @@ alt-e = '''exec-and-forget osascript -e "tell application \"Finder\"
     activate
     open \"Macintosh HD:Users:dede:\"
 end tell"'''
-alt-enter = 'exec-and-forget open -a /Applications/WezTerm.app'
-alt-p = 'exec-and-forget open -a /Applications/Firefox.app'
+alt-enter = 'exec-and-forget open -n /Applications/WezTerm.app'
+alt-p = 'exec-and-forget open -n /Applications/Firefox.app'
 alt-o = 'exec-and-forget open -a /Applications/Bitwarden.app'
-alt-v = 'exec-and-forget open -a /Applications/Visual\ Studio\ Code.app'
+alt-v = 'exec-and-forget open -n /Applications/Visual\ Studio\ Code.app'
 
 # 'service' binding mode declaration.
 # See: https://nikitabobko.github.io/AeroSpace/guide#binding-modes
@@ -204,6 +204,9 @@ run = 'move-node-to-workspace W --focus-follows-window'
 [[on-window-detected]]
 if.app-name-regex-substring = 'steam'
 run = 'move-node-to-workspace G --focus-follows-window'
+[[on-window-detected]]
+if.app-name-regex-substring = 'crossover'
+run = ['layout floating', 'move-node-to-workspace G --focus-follows-window']
 
 # Floating Windows, need to specify a callback for each individual one.
 # https://github.com/nikitabobko/AeroSpace/issues/660

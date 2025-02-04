@@ -31,3 +31,4 @@ alias cat="bat"
 
 # Source files
 eval "$(zoxide init zsh)"
+
