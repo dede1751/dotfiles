@@ -19,7 +19,7 @@ brew install git git-lfs yadm eza bat zoxide fzf
 
 Install Homebrew casks:
 ```sh
-brew install --cask firefox visual-studio-code nikitabobko/tap/aerospace wezterm whatsapp telegram
+brew install --cask firefox visual-studio-code nikitabobko/tap/aerospace wezterm whatsapp telegram slack notunes spotify chatgpt steam
 ```
 
 Install Homebrew formulae:
