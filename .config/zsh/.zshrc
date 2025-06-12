@@ -29,6 +29,8 @@ alias lt='eza --tree --level=2 --color=always --group-directories-first --icons'
 alias cd="z"
 alias cat="bat"
 
+alias crossover-renew='bash -c "$(curl -fsSL https://raw.githubusercontent.com/Nygosaki/crossover-trial-renew/refs/heads/main/resetCrossoverTrial.sh)"'
+
 # Source files
 eval "$(zoxide init zsh)"
 
